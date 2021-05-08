@@ -36,6 +36,15 @@ namespace ACM.BL
             }
         }
 
+        public Customer()
+        {
+
+        }
+        public Customer(int customerId)
+        {
+            CustomerID = customerId; 
+        }
+
         public bool Validate ()
         {
             var isValid = true;

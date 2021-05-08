@@ -145,10 +145,5 @@ namespace ACM.BLTest
             Assert.AreEqual(Expectedval, c.Validate());
         }
 
-
-
-
-
-
     }
 }
