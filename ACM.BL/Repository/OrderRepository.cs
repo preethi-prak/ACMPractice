@@ -9,7 +9,13 @@ public class OrderRepository
 	}
     public Order RetrieveOrder(int orderId)
     {
-        return new Order();
+        Order order = new Order();
+
+        if (orderId == 1)
+            order.OrderDate = DateTime.Now;
+
+        
+        return order; 
     }
 
     public List<Order> RetrieveOrder()

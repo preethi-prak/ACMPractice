@@ -7,7 +7,7 @@ namespace ACM.BLTest.RepositoryTest
     public class ProductRepositoryTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ProductRetrieveTest()
         {
         }
     }

@@ -6,11 +6,21 @@ public class ProductRepository
 {
 	public ProductRepository()
 	{
-	}
+       
+    }
 
     public Product RetrieveProduct(int productID)
     {
-        return new Product();
+        Product product = new Product();
+
+        if (productID == 1)
+        {
+            product.ProductName = "ABC";
+            product.ProductDescription = "Shoes";
+            product.CurrentPrice = 233.23M;
+
+        }
+        return product;
     }
 
     public List<Product> RetrieveProduct()
