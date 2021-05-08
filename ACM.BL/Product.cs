@@ -10,9 +10,9 @@ namespace ACM.BL
     {
         public int ProductID { get; private set; }
         public string ProductName { get; set; }
-        public string Description { get; set; }
+        public string ProductDescription { get; set; }
 
-        public double CurrentPrice { get; set; }
+        public decimal? CurrentPrice { get; set; }
         public Product()
         {
 
@@ -28,7 +28,7 @@ namespace ACM.BL
             var isvalid = true;
             if (String.IsNullOrEmpty(ProductName))
                 isvalid = false;
-            if (CurrentPrice <= 0)
+            if (CurrentPrice == null)
                 isvalid = false;
             return isvalid; 
         }

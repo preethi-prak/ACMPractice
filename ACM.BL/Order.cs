@@ -8,7 +8,7 @@ namespace ACM.BL
 {
     class Order
     {
-        public DateTime OrderDate { get; set; }
+        public DateTimeOffset? OrderDate { get; set; }
 
         public int OrderID { get; private set; }
 
@@ -24,7 +24,7 @@ namespace ACM.BL
         public bool ValidateOrderDate()
         {
             var isValid = true;
-            if (OrderDate.Year < DateTime.Today.Year)
+            if (OrderDate == null)
                 isValid = false;
 
             return isValid; 
