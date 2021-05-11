@@ -36,13 +36,16 @@ namespace ACM.BL
             }
         }
 
-        public Customer()
+        public List<Address> AddressList { get; set; };
+        //constructor chaining
+        public Customer() : this(0)
         {
 
         }
         public Customer(int customerId)
         {
-            CustomerID = customerId; 
+            CustomerID = customerId;
+            AddressList = new List<Address>();
         }
 
         public bool Validate ()

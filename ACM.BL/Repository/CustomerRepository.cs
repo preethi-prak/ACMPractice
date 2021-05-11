@@ -1,11 +1,17 @@
 ﻿using ACM.BL;
+using ACM.BL.Repository;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 public class CustomerRepository
 {
-	public CustomerRepository()
+
+    public AddressRepository addressRepository { get; set; }
+
+    public CustomerRepository()
 	{
+        addressRepository = new AddressRepository(); 
 	}
 
     public Customer RetrieveCustomer(int customerID)
@@ -16,6 +22,7 @@ public class CustomerRepository
             customer.FirstName = "Preethi";
             customer.LastName = "Prakash";
             customer.EmailAddress = "preethi93@icloud.com";
+            customer.AddressList = addressRepository.RetrieveAddressByCustID(customerID).ToList();
         }
         return customer;
     }
