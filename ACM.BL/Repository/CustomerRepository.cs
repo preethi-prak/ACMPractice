@@ -8,6 +8,7 @@ public class CustomerRepository
 {
 
     public AddressRepository addressRepository { get; set; }
+    //collaborative relationship between address and customer repository
 
     public CustomerRepository()
 	{

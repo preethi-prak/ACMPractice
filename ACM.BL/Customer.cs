@@ -17,6 +17,8 @@ namespace ACM.BL
 
         public static int  InstanceCount { get; set; }
 
+        public int CustomerType { get; set; }
+
         public string FullName
         {
             get
@@ -36,7 +38,7 @@ namespace ACM.BL
             }
         }
 
-        public List<Address> AddressList { get; set; };
+        public List<Address> AddressList { get; set; }
         //constructor chaining
         public Customer() : this(0)
         {

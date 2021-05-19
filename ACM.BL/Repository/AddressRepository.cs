@@ -57,15 +57,10 @@ namespace ACM.BL.Repository
             };
             addresslist.Add(address1);
 
-            return addresslist; 
-
-
-
-
-
-
+            return addresslist;
 
         }
-        }
+    
+        
     }
 }
