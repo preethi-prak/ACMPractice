@@ -9,7 +9,16 @@ namespace ACM.BL
     public class Product : EntityBase
     {
         public int ProductID { get; private set; }
-        public string ProductName { get; set; }
+      //  public string ProductName { get; set; }
+
+        private string _productname;
+
+        public string ProductName
+        {
+            get { return _productname; }
+            set { _productname = value; }
+        }
+
         public string ProductDescription { get; set; }
 
         public decimal? CurrentPrice { get; set; }
@@ -33,7 +42,7 @@ namespace ACM.BL
             return isvalid; 
         }
 
-   
+  
 
 
     }

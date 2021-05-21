@@ -70,7 +70,6 @@ namespace ACM.BLTest.RepositoryTest
             var actual = customerRepo.RetrieveCustomer(1);
 
             //assert 
-            Assert.AreEqual(expected.CustomerID, actual.CustomerID);
             Assert.AreEqual(expected.FirstName, actual.FirstName);
             Assert.AreEqual(expected.LastName, actual.LastName);
             Assert.AreEqual(expected.EmailAddress, actual.EmailAddress);

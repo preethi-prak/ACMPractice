@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACM.BLTest", "Tests\ACM.BLT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACM.BL", "ACM.BL\ACM.BL.csproj", "{EC97CA04-E907-48B5-9866-C4A023E2846A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACME.Common", "ACME.Common\ACME.Common.csproj", "{A26C4548-6753-43A8-B8D0-23607ADD2E5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACME.CommonTest", "Tests\ACME.CommonTest\ACME.CommonTest.csproj", "{6FE16E44-237B-4262-802C-7299BDB788BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +27,21 @@ Global
 		{EC97CA04-E907-48B5-9866-C4A023E2846A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC97CA04-E907-48B5-9866-C4A023E2846A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC97CA04-E907-48B5-9866-C4A023E2846A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A26C4548-6753-43A8-B8D0-23607ADD2E5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A26C4548-6753-43A8-B8D0-23607ADD2E5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A26C4548-6753-43A8-B8D0-23607ADD2E5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A26C4548-6753-43A8-B8D0-23607ADD2E5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FE16E44-237B-4262-802C-7299BDB788BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FE16E44-237B-4262-802C-7299BDB788BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FE16E44-237B-4262-802C-7299BDB788BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FE16E44-237B-4262-802C-7299BDB788BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CDDC056C-B006-46DC-BFB7-888A4FF188C3} = {0A760234-CCCA-493E-B62C-A0EA5AD41CB3}
+		{6FE16E44-237B-4262-802C-7299BDB788BB} = {0A760234-CCCA-493E-B62C-A0EA5AD41CB3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0002F079-EB93-45CC-87D0-96F2CCE3D5CA}

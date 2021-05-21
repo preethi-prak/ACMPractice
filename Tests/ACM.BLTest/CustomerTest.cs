@@ -17,7 +17,7 @@ namespace ACM.BLTest
                 LastName = "Prakash"
             };
 
-            string expectedval = "Preethi,Prakash";
+            string expectedval = "Prakash,Preethi";
 
             //act 
             string actualval = customer.FullName;
