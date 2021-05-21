@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ACME.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    public class Order
+    public class Order : EntityBase , ILoggable
     {
         public DateTimeOffset? OrderDate { get; set; }
 
@@ -33,7 +34,14 @@ namespace ACM.BL
             return isValid; 
         }
 
-      
+        public override bool Validate()
+        {
+            throw new NotImplementedException();
+        }
 
+        public string Log()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

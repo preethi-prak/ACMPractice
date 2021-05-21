@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ACME.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    public class Customer
+    public class Customer : EntityBase, ILoggable
     {
         public string LastName { get; set; }
         public string FirstName { get; set; }
@@ -50,7 +51,7 @@ namespace ACM.BL
             AddressList = new List<Address>();
         }
 
-        public bool Validate ()
+        public override bool Validate ()
         {
             var isValid = true;
             if (string.IsNullOrEmpty(LastName))
@@ -61,7 +62,8 @@ namespace ACM.BL
             return isValid; 
         }
 
-       
-
+        public string Log() =>
+             $"{CustomerID}:{FullName} Email: {EmailAddress} Status : {Entitystate}";
+  
     }
 }

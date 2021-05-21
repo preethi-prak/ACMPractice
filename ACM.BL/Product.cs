@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    public class Product : EntityBase
+    public class Product : EntityBase , ILoggable
     {
         public int ProductID { get; private set; }
       //  public string ProductName { get; set; }
@@ -51,8 +51,9 @@ namespace ACM.BL
             return isvalid; 
         }
 
-  
 
+        public string Log() =>
+     $"{ProductID}:{ProductName} Desc: {ProductDescription} Status : {Entitystate}";
 
     }
 }
