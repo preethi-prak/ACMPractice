@@ -28,8 +28,28 @@ public class ProductRepository
         return new List<Product>();
     }
 
-    public bool SaveProductInfo()
+    public bool Save(Product product)
     {
-        return true;
+        var success = true;
+        if (product.HasChanges)
+        {
+            if (product.IsValid)
+            {
+                if (product.IsNew)
+                {
+                    //Insert into DB as INSERT
+                }
+                else
+                {
+                    //Insert into DB as Update
+                }
+            }
+            else
+            {
+                success = false; 
+            }
+        }
+
+        return success; 
     }
 }
