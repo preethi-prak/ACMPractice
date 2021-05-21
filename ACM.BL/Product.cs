@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ACME.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +16,15 @@ namespace ACM.BL
 
         public string ProductName
         {
-            get { return _productname; }
+            get {
+
+                // calling using static class name
+
+                // return StringHandler.InsertSpaces(_productname);
+
+                // Calling Extention Method 
+                return _productname.InsertSpaces();
+            }
             set { _productname = value; }
         }
 

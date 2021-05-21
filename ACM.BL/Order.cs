@@ -11,7 +11,7 @@ namespace ACM.BL
         public DateTimeOffset? OrderDate { get; set; }
 
         public int OrderID { get; private set; }
-        public List<OrderItem> orderItems { get; set; }
+        public List<OrderItem> OrderItems { get; set; }
 
 
         public Order() : this(0)
@@ -21,7 +21,7 @@ namespace ACM.BL
         public Order(int orderID)
         {
             OrderID = orderID;
-            orderItems = new List<OrderItem>();
+            OrderItems = new List<OrderItem>();
         }
 
         public bool ValidateOrderDate()

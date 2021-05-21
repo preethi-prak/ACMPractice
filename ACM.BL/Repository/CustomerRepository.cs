@@ -7,12 +7,12 @@ using System.Linq;
 public class CustomerRepository
 {
 
-    public AddressRepository addressRepository { get; set; }
+    public AddressRepository AddressRepository { get; set; }
     //collaborative relationship between address and customer repository
 
     public CustomerRepository()
 	{
-        addressRepository = new AddressRepository(); 
+        AddressRepository = new AddressRepository(); 
 	}
 
     public Customer RetrieveCustomer(int customerID)
@@ -23,7 +23,7 @@ public class CustomerRepository
             customer.FirstName = "Preethi";
             customer.LastName = "Prakash";
             customer.EmailAddress = "preethi93@icloud.com";
-            customer.AddressList = addressRepository.RetrieveAddressByCustID(customerID).ToList();
+            customer.AddressList = AddressRepository.RetrieveAddressByCustID(customerID).ToList();
         }
         return customer;
     }

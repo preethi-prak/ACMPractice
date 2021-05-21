@@ -12,8 +12,8 @@ namespace ACME.CommonTest
         {
             var source = "PreethiPrakash";
             var expected = "Preethi Prakash";
-            var handler = new StringHandler();
-            var actual = handler.InsertSpaces(source);
+           
+            var actual = StringHandler.InsertSpaces(source);
 
             Assert.AreEqual(expected, actual);
 
@@ -24,8 +24,8 @@ namespace ACME.CommonTest
         {
             var source = "Sun Flower";
             var expected = "Sun Flower";
-            var handler = new StringHandler();
-            var actual = handler.InsertSpaces(source);
+            var actual = StringHandler.InsertSpaces(source);
+
 
             Assert.AreEqual(expected, actual);
         }
