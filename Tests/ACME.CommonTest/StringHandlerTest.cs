@@ -18,5 +18,16 @@ namespace ACME.CommonTest
             Assert.AreEqual(expected, actual);
 
         }
+
+        [TestMethod] 
+        public void InsertSpacesTestWithExisitingSpaces()
+        {
+            var source = "Sun Flower";
+            var expected = "Sun Flower";
+            var handler = new StringHandler();
+            var actual = handler.InsertSpaces(source);
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
